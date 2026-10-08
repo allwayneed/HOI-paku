@@ -1148,11 +1148,22 @@ class DataFetcher {
     return DataFetcher.HOI4_REPO_RAW + '/' + path;
   }
 
-  // 方針アイコン: Paradox Wiki FilePath API 経由で公式アイコンを取得 (hoi4-historyにgfxは無いため)
-  // 検証済み: 全1348方針中1347が200 (残り1件はonerrorで非表示)
-  static WIKI_FILE_BASE = 'https://hoi4.paradoxwikis.com/Special:FilePath/';
-  static getFocusIconUrl(focusId) {
-    return DataFetcher.WIKI_FILE_BASE + encodeURIComponent(focusId) + '.png';
+  // 方針カテゴリアイコン (AI生成・レポ同梱: assets/img/focus/) — id/タイトルからカテゴリ判定
+  static FOCUS_ICON_CATEGORIES = [
+    ['navy', /(navy|fleet|ship|submarine|naval|convoy|maritime|海軍|艦隊|艦|制海)/i],
+    ['air', /(air|plane|jet|rocket|bomber|luftwaffe|空軍|航空|制空|爆撃|戦闘機)/i],
+    ['industry', /(industr|econom|factory|production|autark|wirtschaft|autobahn|rubber|coal|liquid|oil|trade|market|werk|資源|経済|工場|産業|貿易|石油|石炭|ゴム)/i],
+    ['research', /(tech|research|science|innov|invent|研究|技術|科学|革新|開発)/i],
+    ['construction', /(fort|wall|maginot|atlantik|ostwall|defen|constru|build|要塞|壁|建設|防衛|防御|建築)/i],
+    ['army', /(army|tank|armor|infantr|militar|division|assault|rearm|armored|陸軍|戦車|師団|軍備|攻撃|再軍備)/i]
+  ];
+  static getFocusIconUrl(focusId, title) {
+    const text = (focusId || '') + ' ' + (title || '');
+    let cat = 'politics';
+    for (const entry of DataFetcher.FOCUS_ICON_CATEGORIES) {
+      if (entry[1].test(text)) { cat = entry[0]; break; }
+    }
+    return 'assets/img/focus/' + cat + '.jpg';
   }
 
   static getCountryFlag(country) {
@@ -1900,7 +1911,7 @@ class FocusTreeManager {
       node.style.left = nodePosition.x + 'px';
       node.style.top = nodePosition.y + 'px';
       node.innerHTML =
-        '<div class="fn-icon"><img src="' + DataFetcher.getFocusIconUrl(f.id) + '" alt="" loading="lazy" decoding="async" onerror="this.parentNode.style.display=\'none\'"></div>' +
+        '<div class="fn-icon"><img src="' + DataFetcher.getFocusIconUrl(f.id, displayTitle) + '" alt="" loading="lazy" decoding="async" onerror="this.parentNode.style.display=\'none\'"></div>' +
         '<div class="fn-title">' + GameTools.escape(titleShort) + '</div>' +
         '<div class="fn-cost">📅' + (f.cost || 70) + '日</div>' +
         progressHtml;

@@ -6,7 +6,7 @@ Hearts of Iron IV × 将軍カードゲーム — 改良版 (fork of [iekei/ieke
 
 ## 元版からの改善点 (2026-10-08)
 
-- **国家方針アイコン**: Paradox Wiki FilePath API 経由で公式アイコン全1348方針に表示 (旧: テキストのみ)
+- **国家方針アイコン**: AI生成カテゴリアイコン (工業/陸軍/海軍/空軍/政治/研究/建設の7種) を全方針ノードに表示 (旧: テキストのみ)
 - **アセット強化**: スタート画面ヒーロー画像 / 方針ツリー背景テクスチャを追加
 - **オートセーブ**: 30ゲーム内日ごと + ページを閉じる時に自動保存 (専用スロット)
 - **ショートカット**: 1〜5キーで速度切替、Spaceで一時停止/再開
@@ -20,6 +20,6 @@ Hearts of Iron IV × 将軍カードゲーム — 改良版 (fork of [iekei/ieke
 - 元ゲーム: [iekei/iekei1](https://github.com/iekei/iekei1)
 - データソース: [cbrzeczysz/hoi4-history](https://github.com/cbrzeczysz/hoi4-history)
 - アイコン配信: [HoI4 Paradox Wiki](https://hoi4.paradoxwikis.com/)
-- ヒーロー/背景画像: AI生成
+- ヒーロー/背景/アイコン画像: AI生成 (Encarta)
 
 ※ Paradox Interactive とは無関係の非公式ファンプロジェクトです。
