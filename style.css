@@ -1,0 +1,342 @@
+/* --- 変数定義（ライトモード・デフォルト） --- */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --sidebar-bg: #f4f4f4;
+    --sidebar-text: #333333;
+    --hover-color: #e0e0e0;
+    --border-color: #dddddd;
+    --transition-speed: 0.3s;
+}
+
+/* --- ダークモード（マットブラック基調） --- */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --sidebar-bg: #1a1a1a;
+    --sidebar-text: #e0e0e0;
+    --hover-color: #2a2a2a;
+    --border-color: #333333;
+}
+
+/* --- リセット & 基本スタイル --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* --- サイドバーのスタイル --- */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform var(--transition-speed), background-color var(--transition-speed);
+    z-index: 1000;
+}
+
+/* 閉じた状態のクラス */
+.sidebar.closed {
+    transform: translateX(-250px);
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ロゴ・タイトルエリア */
+.sidebar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* ナビゲーションメニュー */
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.nav-item a:hover {
+    background-color: var(--hover-color);
+}
+
+.nav-item i {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* --- テーマ切り替えスイッチ --- */
+.theme-switch-container {
+    padding: 15px 10px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switch-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* --- メインコンテンツエリア --- */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    margin-left: 250px;
+    transition: margin-left var(--transition-speed);
+}
+
+/* サイドバーが閉じた時のコンテンツ幅の調整 */
+.main-content.expanded {
+    margin-left: 0;
+}
+
+/* サイドバーを開閉するボタン */
+.toggle-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.toggle-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.content-body {
+    margin-top: 20px;
+}
+
+/*中央寄せ*/
+
+.center-box {
+    text-align: center; /* 中の文字や画像を中央に寄せる */
+    width: 100%;        /* 横幅を画面いっぱいに広げる */
+    display: block;     /* 確実にブロック型の箱として扱う */
+}
+
+/* ==========================================================================
+   既存の :root と [data-theme="dark"] の中に、以下の変数(★)を追加してください
+   ========================================================================== */
+:root {
+    /* 既存の変数... */
+    --panel-bg: #fdfdfd;            /* ライトモード時のパネル背景 */
+    --neon-blue: #007bff;          /* ライト時の青アクセント */
+    --neon-glow: rgba(0, 123, 255, 0.2); 
+}
+
+[data-theme="dark"] {
+    /* 既存の変数... */
+    --bg-color: #0d0d0d;           /* より深いマットブラックに */
+    --sidebar-bg: #121212;
+    --panel-bg: #161616;           /* ダークモード時のパネル背景 */
+    --neon-blue: #00d2ff;          /* ★鮮やかなネオンブルー */
+    --neon-glow: rgba(0, 210, 255, 0.6); /* ★ネオンの光 */
+}
+
+/* ==========================================================================
+   ここから下を、style.css の一番最後にそのまま貼り付けてください
+   ========================================================================== */
+
+/* パネルを画面の中央に綺麗に配置するためのヘルパー */
+.wrapper-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+/* guns.lol風 自己紹介カード本体 */
+.profile-card {
+    background-color: var(--panel-bg);
+    width: 100%;
+    max-width: 380px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: all var(--transition-speed);
+}
+
+/* ダークモード時の青色ネオン発光エフェクト */
+[data-theme="dark"] .profile-card {
+    border: 1px solid var(--neon-blue);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 
+                0 0 20px var(--neon-glow), 
+                inset 0 0 10px rgba(0, 210, 255, 0.1);
+}
+
+/* アバター画像設定 */
+.avatar-container {
+    margin-bottom: 15px;
+}
+.profile-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    transition: all var(--transition-speed);
+}
+[data-theme="dark"] .profile-avatar {
+    border: 2px solid var(--neon-blue);
+    /* 画像の周りも少し光らせる */
+    box-shadow: 0 0 15px var(--neon-glow);
+}
+
+/* ユーザー名 */
+.profile-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    transition: all var(--transition-speed);
+}
+[data-theme="dark"] .profile-name {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.profile-tagline {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* 自己紹介テキスト */
+.profile-bio {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+/* SNSアイコンエリア */
+.profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+.link-icon {
+    font-size: 1.4rem;
+    color: #888;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.link-icon:hover {
+    color: var(--neon-blue);
+    transform: translateY(-3px);
+}
+[data-theme="dark"] .link-icon:hover {
+    text-shadow: 0 0 10px var(--neon-blue);
+}
+
+/* バッジ（タグ） */
+.profile-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 30px;
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-speed);
+}
+[data-theme="dark"] .badge {
+    background-color: rgba(0, 210, 255, 0.05);
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    color: var(--neon-blue);
+}

@@ -1,0 +1,16 @@
+# 3ヶ月前・3週間前などの古いフォルダを除外
+/about/
+/blog/
+/chat/
+/hoi/
+/ikei1/
+/lineup/
+/lineup_src/
+/math/
+/server/
+/.github/
+
+# ルート直下にある古いファイルを除外
+/index.html
+/script.js
+/sidebar.html

@@ -1,0 +1,749 @@
+[
+  {
+    "id": "aircraft_construction",
+    "title": "Aircraft Construction",
+    "year": 1936,
+    "x": -200,
+    "y": 100,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_aircraft_construction",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "engines_1"
+    ]
+  },
+  {
+    "id": "range_improvements",
+    "title": "Range Improvements",
+    "year": 1936,
+    "x": -200,
+    "y": 200,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_range_improvements",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "engines_1"
+    ]
+  },
+  {
+    "id": "survivability_studies",
+    "title": "Survivability Studies",
+    "year": 1939,
+    "x": -200,
+    "y": 250,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_survivability_studies",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, mio_cat_all_light_fighter_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "aa_lmg"
+    ]
+  },
+  {
+    "id": "sp_centrifugal_jet_tech",
+    "title": "Sp Centrifugal Jet Tech",
+    "year": 1945,
+    "x": 0,
+    "y": 0,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "sp_aircraft_centrifugal_jet",
+    "effects": [
+      "カテゴリ: jet_technology, cat_air_engine, helicopter_tech"
+    ],
+    "prerequisites": [
+      "engines_4"
+    ]
+  },
+  {
+    "id": "reinforced_wings_mothership",
+    "title": "Reinforced Wings Mothership",
+    "year": 1942,
+    "x": 0,
+    "y": 0,
+    "research_time": 175,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "sp_aircraft_reinforced_wings",
+    "effects": [
+      "カテゴリ: heavy_air, air_equipment, cat_strategic_bomber, mio_cat_all_heavy_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "improved_large_airframe"
+    ]
+  },
+  {
+    "id": "miniature_fighters",
+    "title": "Miniature Fighters",
+    "year": 1944,
+    "x": 0,
+    "y": 0,
+    "research_time": 150,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "sp_aircraft_miniature_fighters",
+    "effects": [
+      "カテゴリ: heavy_air, air_equipment, cat_strategic_bomber, mio_cat_all_heavy_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "reinforced_wings_mothership"
+    ]
+  },
+  {
+    "id": "aerial_hangars",
+    "title": "Aerial Hangars",
+    "year": 1946,
+    "x": 0,
+    "y": 0,
+    "research_time": 175,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "sp_aircraft_aerial_hangars",
+    "effects": [
+      "カテゴリ: heavy_air, air_equipment, cat_strategic_bomber, mio_cat_all_heavy_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "miniature_fighters"
+    ]
+  },
+  {
+    "id": "bba_early_transport_plane",
+    "title": "Bba Early Transport Plane",
+    "year": 1933,
+    "x": 0,
+    "y": 100,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "generic_transport_plane_equipment_1",
+    "effects": [
+      "配備可能: transport_plane_equipment_1",
+      "カテゴリ: air_equipment, transport_planes_cat"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "iw_small_airframe",
+    "title": "Iw Small Airframe",
+    "year": 1926,
+    "x": 0,
+    "y": 100,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "light_plane_4",
+    "effects": [
+      "配備可能: small_plane_airframe_0",
+      "配備可能: small_plane_cas_airframe_0",
+      "配備可能: small_plane_naval_bomber_airframe_0",
+      "配備可能: small_plane_suicide_airframe_0",
+      "配備可能: cv_small_plane_airframe_0",
+      "配備可能: cv_small_plane_cas_airframe_0",
+      "配備可能: cv_small_plane_naval_bomber_airframe_0",
+      "配備可能: cv_small_plane_suicide_airframe_0",
+      "カテゴリ: light_air, light_fighter, cas_bomber, naval_air, naval_bomber, air_equipment, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "iw_large_airframe",
+    "title": "Iw Large Airframe",
+    "year": 1926,
+    "x": 0,
+    "y": 100,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "FRA_strategic_bomber1",
+    "effects": [
+      "配備可能: large_plane_airframe_0",
+      "配備可能: large_plane_maritime_patrol_plane_airframe_0",
+      "カテゴリ: heavy_air, air_equipment, cat_strategic_bomber, cat_maritime_patrol, mio_cat_all_heavy_aircraft_and_modules"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "early_bombs",
+    "title": "Early Bombs",
+    "year": 1922,
+    "x": 0,
+    "y": 100,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_early_bombs",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_bombs, mio_cat_all_cas_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "photo_reconnaisance",
+    "title": "Photo Reconnaisance",
+    "year": 1922,
+    "x": 0,
+    "y": 100,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_photo_reconnaisance",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, mio_cat_all_medium_aircraft_and_modules"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "air_torpedoe_1",
+    "title": "Air Torpedoe 1",
+    "year": 1936,
+    "x": 0,
+    "y": 100,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "basic_torpedo",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_bombs, cat_maritime_patrol, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "aa_lmg",
+    "title": "Aa Lmg",
+    "year": 1922,
+    "x": 0,
+    "y": 100,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_aa_mg_1",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_guns, mio_cat_all_light_fighter_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "engines_1",
+    "title": "Engines 1",
+    "year": 1922,
+    "x": 0,
+    "y": 100,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_engines_1",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_engine, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "basic_small_airframe",
+    "title": "Basic Small Airframe",
+    "year": 1936,
+    "x": 0,
+    "y": 200,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "light_plane_3",
+    "effects": [
+      "配備可能: small_plane_airframe_1",
+      "配備可能: small_plane_cas_airframe_1",
+      "配備可能: small_plane_naval_bomber_airframe_1",
+      "配備可能: small_plane_suicide_airframe_1",
+      "配備可能: cv_small_plane_airframe_1",
+      "配備可能: cv_small_plane_cas_airframe_1",
+      "配備可能: cv_small_plane_naval_bomber_airframe_1",
+      "配備可能: cv_small_plane_suicide_airframe_1",
+      "カテゴリ: light_air, light_fighter, cas_bomber, naval_air, naval_bomber, air_equipment, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "iw_small_airframe"
+    ]
+  },
+  {
+    "id": "basic_large_airframe",
+    "title": "Basic Large Airframe",
+    "year": 1936,
+    "x": 0,
+    "y": 200,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "heavy_plane_1",
+    "effects": [
+      "配備可能: large_plane_airframe_1",
+      "配備可能: large_plane_maritime_patrol_plane_airframe_1",
+      "カテゴリ: heavy_air, air_equipment, cat_strategic_bomber, cat_maritime_patrol, mio_cat_all_heavy_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "iw_large_airframe"
+    ]
+  },
+  {
+    "id": "engines_2",
+    "title": "Engines 2",
+    "year": 1936,
+    "x": 0,
+    "y": 200,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_engines_2",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_engine, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "engines_1"
+    ]
+  },
+  {
+    "id": "aa_hmg",
+    "title": "Aa Hmg",
+    "year": 1939,
+    "x": 0,
+    "y": 250,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_aa_mg_2",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_guns, mio_cat_all_light_fighter_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "aa_lmg"
+    ]
+  },
+  {
+    "id": "bba_improved_transport_plane",
+    "title": "Bba Improved Transport Plane",
+    "year": 1940,
+    "x": 0,
+    "y": 300,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "generic_transport_plane_equipment_2",
+    "effects": [
+      "配備可能: transport_plane_equipment_2",
+      "カテゴリ: air_equipment, transport_planes_cat"
+    ],
+    "prerequisites": [
+      "bba_early_transport_plane"
+    ]
+  },
+  {
+    "id": "improved_small_airframe",
+    "title": "Improved Small Airframe",
+    "year": 1940,
+    "x": 0,
+    "y": 300,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "light_plane_2",
+    "effects": [
+      "配備可能: small_plane_airframe_2",
+      "配備可能: small_plane_cas_airframe_2",
+      "配備可能: small_plane_naval_bomber_airframe_2",
+      "配備可能: small_plane_suicide_airframe_2",
+      "配備可能: cv_small_plane_airframe_2",
+      "配備可能: cv_small_plane_cas_airframe_2",
+      "配備可能: cv_small_plane_naval_bomber_airframe_2",
+      "配備可能: cv_small_plane_suicide_airframe_2",
+      "カテゴリ: light_air, light_fighter, cas_bomber, naval_air, naval_bomber, air_equipment, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "basic_small_airframe"
+    ]
+  },
+  {
+    "id": "improved_large_airframe",
+    "title": "Improved Large Airframe",
+    "year": 1940,
+    "x": 0,
+    "y": 300,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "heavy_plane_3",
+    "effects": [
+      "配備可能: large_plane_airframe_2",
+      "配備可能: large_plane_maritime_patrol_plane_airframe_2",
+      "カテゴリ: heavy_air, air_equipment, cat_strategic_bomber, cat_maritime_patrol, mio_cat_all_heavy_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "basic_large_airframe"
+    ]
+  },
+  {
+    "id": "heavy_bombs",
+    "title": "Heavy Bombs",
+    "year": 1940,
+    "x": 0,
+    "y": 300,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_heavy_bombs",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_bombs, mio_cat_all_cas_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "early_bombs"
+    ]
+  },
+  {
+    "id": "air_torpedoe_2",
+    "title": "Air Torpedoe 2",
+    "year": 1940,
+    "x": 0,
+    "y": 300,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "electric_torpedo",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_bombs, cat_maritime_patrol, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "air_torpedoe_1"
+    ]
+  },
+  {
+    "id": "engines_3",
+    "title": "Engines 3",
+    "year": 1940,
+    "x": 0,
+    "y": 300,
+    "research_time": 150,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_engines_3",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_engine, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "engines_2"
+    ]
+  },
+  {
+    "id": "aa_cannon_2",
+    "title": "Aa Cannon 2",
+    "year": 1943,
+    "x": 0,
+    "y": 350,
+    "research_time": 150,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_aa_cannon_2",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_guns, mio_cat_all_light_fighter_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "aa_cannon_1"
+    ]
+  },
+  {
+    "id": "advanced_small_airframe",
+    "title": "Advanced Small Airframe",
+    "year": 1944,
+    "x": 0,
+    "y": 400,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "light_plane_1",
+    "effects": [
+      "配備可能: small_plane_airframe_3",
+      "配備可能: small_plane_cas_airframe_3",
+      "配備可能: small_plane_naval_bomber_airframe_3",
+      "配備可能: small_plane_suicide_airframe_3",
+      "配備可能: cv_small_plane_airframe_3",
+      "配備可能: cv_small_plane_cas_airframe_3",
+      "配備可能: cv_small_plane_naval_bomber_airframe_3",
+      "配備可能: cv_small_plane_suicide_airframe_3",
+      "カテゴリ: light_air, light_fighter, cas_bomber, naval_air, naval_bomber, air_equipment, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "improved_small_airframe"
+    ]
+  },
+  {
+    "id": "advanced_large_airframe",
+    "title": "Advanced Large Airframe",
+    "year": 1944,
+    "x": 0,
+    "y": 400,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "heavy_plane_4",
+    "effects": [
+      "配備可能: large_plane_airframe_3",
+      "配備可能: large_plane_maritime_patrol_plane_airframe_3",
+      "カテゴリ: heavy_air, air_equipment, cat_strategic_bomber, cat_maritime_patrol, mio_cat_all_heavy_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "improved_large_airframe"
+    ]
+  },
+  {
+    "id": "engines_4",
+    "title": "Engines 4",
+    "year": 1944,
+    "x": 0,
+    "y": 400,
+    "research_time": 150,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_engines_4",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_engine, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "engines_3"
+    ]
+  },
+  {
+    "id": "air_torpedoe_3",
+    "title": "Air Torpedoe 3",
+    "year": 1944,
+    "x": 0,
+    "y": 500,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_air_torpedoe_3",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_bombs, cat_maritime_patrol, mio_cat_all_naval_bomber_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "air_torpedoe_2"
+    ]
+  },
+  {
+    "id": "bba_strategic_airlifter",
+    "title": "Bba Strategic Airlifter",
+    "year": 1945,
+    "x": 0,
+    "y": 600,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "generic_transport_plane_equipment_3",
+    "effects": [
+      "配備可能: transport_plane_equipment_3",
+      "カテゴリ: air_equipment, transport_planes_cat"
+    ],
+    "prerequisites": [
+      "bba_improved_transport_plane"
+    ]
+  },
+  {
+    "id": "modern_small_airframe",
+    "title": "Modern Small Airframe",
+    "year": 1945,
+    "x": 0,
+    "y": 600,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "jet_plane_1",
+    "effects": [
+      "配備可能: small_plane_airframe_4",
+      "配備可能: small_plane_cas_airframe_4",
+      "配備可能: small_plane_naval_bomber_airframe_4",
+      "配備可能: small_plane_suicide_airframe_4",
+      "配備可能: cv_small_plane_airframe_4",
+      "配備可能: cv_small_plane_cas_airframe_4",
+      "配備可能: cv_small_plane_naval_bomber_airframe_4",
+      "配備可能: cv_small_plane_suicide_airframe_4",
+      "カテゴリ: light_air, light_fighter, cas_bomber, air_equipment, naval_air, naval_bomber, jet_technology, mio_cat_all_light_fighter_and_modules, mio_cat_all_cas_and_modules, mio_cat_all_naval_bomber_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "advanced_small_airframe"
+    ]
+  },
+  {
+    "id": "modern_large_airframe",
+    "title": "Modern Large Airframe",
+    "year": 1945,
+    "x": 0,
+    "y": 600,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "heavy_plane_2",
+    "effects": [
+      "配備可能: large_plane_airframe_4",
+      "配備可能: large_plane_maritime_patrol_plane_airframe_4",
+      "カテゴリ: heavy_air, jet_technology, cat_strategic_bomber, cat_maritime_patrol, mio_cat_all_heavy_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "advanced_large_airframe"
+    ]
+  },
+  {
+    "id": "iw_medium_airframe",
+    "title": "Iw Medium Airframe",
+    "year": 1926,
+    "x": 200,
+    "y": 100,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "medium_plane_5",
+    "effects": [
+      "配備可能: medium_plane_airframe_0",
+      "配備可能: medium_plane_fighter_airframe_0",
+      "配備可能: medium_plane_scout_plane_airframe_0",
+      "カテゴリ: medium_air, tactical_bomber, cat_heavy_fighter, air_equipment, mio_cat_all_medium_aircraft_and_modules"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "armor_piercing_bombs",
+    "title": "Armor Piercing Bombs",
+    "year": 1936,
+    "x": 200,
+    "y": 100,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_armor_piercing_bombs",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_bombs, mio_cat_all_cas_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "early_bombs"
+    ]
+  },
+  {
+    "id": "basic_medium_airframe",
+    "title": "Basic Medium Airframe",
+    "year": 1936,
+    "x": 200,
+    "y": 200,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "medium_plane_1",
+    "effects": [
+      "配備可能: medium_plane_airframe_1",
+      "配備可能: medium_plane_fighter_airframe_1",
+      "配備可能: medium_plane_scout_plane_airframe_1",
+      "カテゴリ: medium_air, tactical_bomber, cat_heavy_fighter, air_equipment, mio_cat_all_medium_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "iw_medium_airframe"
+    ]
+  },
+  {
+    "id": "aa_cannon_1",
+    "title": "Aa Cannon 1",
+    "year": 1939,
+    "x": 200,
+    "y": 250,
+    "research_time": 100,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_aa_cannon_1",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_guns, mio_cat_all_light_fighter_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "aa_lmg"
+    ]
+  },
+  {
+    "id": "improved_medium_airframe",
+    "title": "Improved Medium Airframe",
+    "year": 1940,
+    "x": 200,
+    "y": 300,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "medium_plane_2",
+    "effects": [
+      "配備可能: medium_plane_airframe_2",
+      "配備可能: medium_plane_fighter_airframe_2",
+      "配備可能: medium_plane_scout_plane_airframe_2",
+      "カテゴリ: medium_air, tactical_bomber, cat_heavy_fighter, air_equipment, mio_cat_all_medium_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "basic_medium_airframe"
+    ]
+  },
+  {
+    "id": "advanced_medium_airframe",
+    "title": "Advanced Medium Airframe",
+    "year": 1944,
+    "x": 200,
+    "y": 400,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "medium_plane_3",
+    "effects": [
+      "配備可能: medium_plane_airframe_3",
+      "配備可能: medium_plane_fighter_airframe_3",
+      "配備可能: medium_plane_scout_plane_airframe_3",
+      "カテゴリ: medium_air, tactical_bomber, cat_heavy_fighter, air_equipment, mio_cat_all_medium_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "improved_medium_airframe"
+    ]
+  },
+  {
+    "id": "modern_medium_airframe",
+    "title": "Modern Medium Airframe",
+    "year": 1945,
+    "x": 200,
+    "y": 600,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "medium_plane_4",
+    "effects": [
+      "配備可能: medium_plane_airframe_4",
+      "配備可能: medium_plane_fighter_airframe_4",
+      "配備可能: medium_plane_scout_plane_airframe_4",
+      "カテゴリ: medium_air, jet_technology, cat_heavy_fighter, tactical_bomber, mio_cat_all_medium_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "advanced_medium_airframe"
+    ]
+  },
+  {
+    "id": "aa_cannon_3",
+    "title": "Aa Cannon 3",
+    "year": 1945,
+    "x": 200,
+    "y": 600,
+    "research_time": 200,
+    "reliability": "未研究",
+    "desc": "",
+    "asset_key": "bba_tech_aa_cannon_3",
+    "effects": [
+      "カテゴリ: air_equipment, plane_modules_tech, cat_air_guns, mio_cat_all_light_fighter_and_modules, mio_cat_all_medium_aircraft_and_modules, mio_cat_all_heavy_aircraft_and_modules, mio_cat_all_light_aircraft_and_modules"
+    ],
+    "prerequisites": [
+      "aa_cannon_1"
+    ]
+  }
+]
